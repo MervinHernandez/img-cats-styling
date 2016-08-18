@@ -1,0 +1,60 @@
+<Header/>
+<!-- DO NOT MODIFY ANYTHING ABOVE THIS LINE, TO EDIT YOUR HEADER, SEE: Header.html -->
+
+<div id="stepLogin" style="width:70%;">
+    
+    <div id="jobDetails" style="margin-bottom:25px;">
+        <h1><CompanyName/></h1>
+    </div>
+
+	<!-- Left Side -->
+	<div id="column1" style="width:58%; float:left;">
+    	<h2>Returning Candidates</h2>
+        <br/>
+    	<div id="applicationOuter">
+            <!-- Login Form -->
+            <BeginForm/>
+            <div id="application">
+                <div class="row" id="">
+                    <div class="field required">Email:</div>
+                    <div class="icon required">
+                        <span>*</span>
+                    </div>
+                    <div class="input">
+                        <UserEmailInput/>
+                    </div>
+                    <br class="clear" />
+                </div>
+                <div class="row" id="">
+                    <div class="field required">Password:</div>
+                    <div class="icon required"><span>*</span></div>
+                    <!--Password--><div class="input"><UserPasswordInput/></div>
+                    <span id="forgotPassword"><ForgotPasswordLink/></span>
+                    <br class="clear" />
+                </div>
+            </div>
+            <Message/>
+            <input type="submit" class="submitButton" value="Login" />
+            &nbsp;
+            <br/>
+            </form>
+            <!-- Login Form -->
+        </div>
+    </div>
+    <!-- Divider -->
+    <div id="column2" style="width: 2%;float:left;">&nbsp;</div>
+    <!-- Right Side -->
+    <div id="column3" style="width:40%; float:left;">
+        <h2>New Applicant?</h2>
+        <br>
+        <div id="application">
+        If you'd like to be considered for all of our current and future positions, click the link below to register into our applicant database. 
+        <br><br>
+        <RegisterLink/>
+        </div>
+
+    </div>
+</div>
+
+<!-- DO NOT MODIFY ANYTHING BELOW THIS LINE, TO EDIT YOUR FOOTER, SEE: Footer.html -->
+<Footer/>
