@@ -257,29 +257,22 @@ div#stepForgot {
 .listLinks li.clear { margin: 0 25px 10px 0; }
 
 .button {
-	float: left;
-    /*line-height: normal;*/
-    background-color: #840F0F;
+		float: left;
+    background: #F4A017;
     border: 0px solid transparent;
     margin: 0px 14px 0px 0px;
-    padding: 5px 8px 5px 8px;
+    padding: 5px 38px 5px 38px;
 }
 .button:first-child {
 	float: left;
 	line-height: normal;
 }
-
 .button a {
-	color: white;
-	float: left;
+	color: black;
 	font-weight: bold;
-	height: auto;
-	margin: 0;
-	text-decoration: none;
-	width: auto;
+	text-transform: uppercase;
 }
-
-.button a:hover { color: red; }
+.button a:hover { color: white; }
 
 .button a span {
 	display: block;
@@ -430,7 +423,7 @@ div.noData div.right {
 #jobListings tr.rowEven td.topRowNoBorder { border-bottom: 0; }
 #jobListings tr.rowEven td.bottomRowNoBorder { border-top: 0; }
 
-#jobListings .listJobTitle {	
+#jobListings .listJobTitle {
 	letter-spacing: 1px;
 }
 #jobListings .excerpt {
