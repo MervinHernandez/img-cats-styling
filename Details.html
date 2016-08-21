@@ -1,16 +1,15 @@
 <Header/>
-<!-- DO NOT MODIFY ANYTHING ABOVE THIS LINE, TO EDIT YOUR HEADER, SEE: Header.html -->
-
-<!-- Div - stepJobDetails --> <div id="stepJobDetails" style="width:70%;">
-<i class="fa fa-arrow-left" aria-hidden="true"></i> <BackLink/>
-
+<!-- ##Details## -->
+<!-- Job Details Content -->
+<div id="content">
+  <div id="inner">
+    <div id="stepJobDetails">
+    <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i> <BackLink/> -->
     <Message/>
-
+    <JobBar/>
     <div id="jobDetails">
-        <!-- Job Bar -->
-        <JobBar/>
-        <!-- Job Bar -->
-        <!-- Action Buttons --> <div class="actionButtons">
+      <!-- Action Buttons -->
+      <div class="actionButtons">
             <div class="button">
                 <ApplyButton/>
             </div>
@@ -20,22 +19,15 @@
             </div>
             <br class="clear" />
         </div>
-        <!-- Job Description --> <div class="detailsJobDescription">
-            <table>
-                <tr>
-                    <td>
-                        <JobDescription/>
-                    </td>
-                    <td>
-                    	<h3>Recruiter Contact</h3>
-                    	<br/>
-                    	<div id="recruiterDetails">
-                            <Signature/>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+      <!-- Job Description -->
+      <div class="detailsJobDescription">
+        <JobDescription/>                    
     	</div>
+      <div id="recruiterDetails">
+        <h3>Recruiter Contact</h3>
+        <br/>
+        <Signature/>
+      </div>
         <!-- Action Buttons --> <div class="actionButtons" style="display:none;">
             <div class="button">
                 <ApplyButton/>
@@ -46,8 +38,9 @@
             </div>
             <br class="clear" />
         </div>
+      </div><!-- end of job Details -->
     </div>
-</div>
+  </div>
+</div><!-- end of content-->
 
-<!-- DO NOT MODIFY ANYTHING BELOW THIS LINE, TO EDIT YOUR FOOTER, SEE: Footer.html -->
 <Footer/>
