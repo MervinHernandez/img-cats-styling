@@ -106,7 +106,8 @@ table, tbody, th, tr, td {
 
 /*** STEPS, PAGES ***/
 #content, #applicationOuter {
-	clear:both;	
+	clear:both;
+	background:#E6E6E6;
 }
 
 #stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail { margin: 0 auto; padding: 25px 0 10px 0; width: 100%;  }
