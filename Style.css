@@ -33,7 +33,7 @@ img#ccpBackImage { vertical-align: middle; margin-bottom: 10px; }
 a#ccpBackLink { position: relative; top: -5px; }
 
 /*** TEXT, HEADER ***/
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-family:'Ubuntu'; font-weight:700;}
 h1 { font-size: 18px; }
 h2 { font-size: 16px; }
 h3 { font-size: 14px; }
@@ -221,7 +221,7 @@ div#stepForgot {
 		margin: 0 auto;
 	}
 	.container h1 {
-		font-family: Ubuntu, Helvetica, Arial, sans-serif;
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0em;
@@ -294,16 +294,13 @@ div#stepForgot {
 	height: auto;		/* auto fits to height of content */
 	min-height: 18px;
 	margin: 0 auto;
-	padding: 5px;
+	padding: 5px 0px 5px 15px;
 	width: 99%;
 }
 
 .messageNormal, .messagePlain {
-	background: #EAD6C3;
-    border: 1px solid #842400;
-    border-left: 0;
-    border-right: 0;
-    margin: 0;
+	background: #CCCCCC;
+	margin: 18px 0 12px 0;
 }
 
 .messageWarning {
@@ -433,8 +430,7 @@ div.noData div.right {
 #jobListings tr.rowEven td.topRowNoBorder { border-bottom: 0; }
 #jobListings tr.rowEven td.bottomRowNoBorder { border-top: 0; }
 
-#jobListings .listJobTitle {
-	font-size: 15px;
+#jobListings .listJobTitle {	
 	letter-spacing: 1px;
 }
 #jobListings .excerpt {
@@ -614,15 +610,6 @@ img#previewJobContainerPointer {
 .applicationPagination { text-align: right; }
 
 /*** JOB DETAILS ***/
-#jobDetails {
-	clear: left;
-	width: 100%;
-}
-#jobDetails h1 {
-	font-size:200%;
-}
-#jobDetails p { margin: 4px 0; }
-
 .jobNumber {
 	color: #999;
 	font-size: 13px;
