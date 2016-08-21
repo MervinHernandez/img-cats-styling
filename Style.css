@@ -110,7 +110,7 @@ table, tbody, th, tr, td {
 	background:#E6E6E6;
 }
 
-#stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail { margin: 0 auto; padding: 25px 0 10px 0; width: 100%;  }
+#stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail { margin: 0 auto; width: 100%;  }
 
 #headerNav {
 	width:90%;
@@ -430,7 +430,7 @@ div.noData div.right {
 #jobListings tr.rowEven td.topRowNoBorder { border-bottom: 0; }
 #jobListings tr.rowEven td.bottomRowNoBorder { border-top: 0; }
 
-#jobListings .listJobTitle {	
+#jobListings .listJobTitle {
 	letter-spacing: 1px;
 }
 #jobListings .excerpt {
@@ -625,11 +625,7 @@ img#previewJobContainerPointer {
 }
 
 .detailsJobDescription {
-	border-left: 5px solid #f0f0f0;
-	clear: both;
 	padding: 15px 0 0 0;
-	border-top: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
 }
 
 .actionButtons {
@@ -638,16 +634,23 @@ img#previewJobContainerPointer {
 }
 
 #recruiterDetails {
+	background:#425783;
 	clear: both;
+	color:white;
+	display:block;
+	padding:25px 25px 20px 25px;
 }
-div#recruiterDetails img{
+#recruiterDetails img{
 	width:250px;
+	float:left;
+	border: 5px #F4A017 solid;
+	margin-right:25px;
 }
 
 #recruiterSignature {
 	clear: both;
 	margin: 10px 0;
-
+	height: 180px;
 }
 
 #showDescription { margin: 14px 0; }
