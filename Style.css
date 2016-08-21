@@ -7,7 +7,7 @@ html, body {
 	margin: 0;			/* resets the margin of all contents; sticks to edge of browser */
 	padding: 0;
 	text-align: left;
-	background-color: rgb(242,242,242);
+	background-color: #E6E6E6;
 }
 
 body {
@@ -85,33 +85,35 @@ table, tbody, th, tr, td {
 }
 
 /*** STRUCTURE ***/
-#outer {
-	background: rgb('242,242,242');
-	border: none;
-	border-bottom: 0;
-	border-top: 0;
-	height: 100%;
-	height: auto !important;
-	min-height: 100%;
-	position: relative;
-	/*margin: 0 auto;*/
-	/* 0pixels from the top and bottom, automatically centered */
-	/*padding: 0 5px;*/
-	/*width: 760px;*/
-}
-#inner {
-	width: 70%;
-	margin:0 auto;
-}
+	#outer {
+		background:#E6E6E6;
+	}
+	#inner {
+		width: 90%;
+		margin:0 auto;
+	}
+	#three-quarters {
+		width:75%;
+		float:left;
+	}
+	#one-quarter {
+		float:left;
+		width:25%;
+	}
+	#sidebar-container {
+		padding: 25px 0 0 15px;
+	}
 
 /*** STEPS, PAGES ***/
-#content, #stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail, #applicationOuter { padding: 0 0 10px 0; width: 100%; }
+#content, #applicationOuter {
+	clear:both;	
+}
 
-#stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail { margin: 0 auto; }
+#stepListings, #stepJobDetails, #stepSendToFriend, #stepApplication, #stepConfirmation, #stepRegister, #stepLogin, #stepProfile, #stepUpdate, #stepEmail { margin: 0 auto; padding: 25px 0 10px 0; width: 100%;  }
 
-div#headerNav {
-	width:70%;
-	padding:0 0 25px 0;
+#headerNav {
+	width:90%;
+	padding:0;
 	margin:0 auto;
 }
 
@@ -121,12 +123,8 @@ div#stepForgot {
 	 margin:0 auto;
 }
 
-#content {
-	clear: both; /* clears floating items above content area */
-	margin: 0;
-}
-
 #poweredBy {
+	display:block;
 	clear: both;
 	color: #666;
 	font-size: 11px;
@@ -171,34 +169,76 @@ div#stepForgot {
 	    text-decoration: none;
 	    margin:0 20px;
 	}
-	div#outer-head {
-		background:#e6e6e6;
-		height:auto;
-	}
-	div#img-head {
+	#img-head {
+		width:90%;
 		height:120px;
-		width: 80%;
-	    margin: 0 auto;
-	    font-family: Ubuntu, Helvetica, Arial, sans-serif;
-	    font-size: 14px;
-	    font-weight: 700;
-	    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 	}
 	div#logo img {
 		width:270px;
 		padding-top:18px;
 	}
-	@media only screen and (max-width: 839px) {
-	    div#outer-head {
-	    	height:470px;
-	    }			
-	    li.menu-item {
-	    	display:block;
-	    }
-	}
 
 	span.logoAltText { font-size: 24px; font-weight: bold; }
-
+/* Intermedia - Listings Title */
+	#listingsTitle {
+		position: relative;
+		z-index: 1000;
+		margin: 0;
+		padding: 161px 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: block;
+	}
+	#listingsTitle:before {
+			content: "";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    background: rgba(0, 0, 0, 0.5);
+	}
+	.listingsTitle-hero {
+		position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    z-index: -1;
+	}
+	.container { /* 1400 px width */
+		width: 90%;
+		margin: 0 auto;
+	}
+	.container h1 {
+		font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0em;
+		color: white;
+		font-size:50px;
+		position:relative;
+		z-index:3;
+	}
+	.breadcrumbs-wrapper {
+		color:#BBB;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.4);
+		padding-top: 18px;
+		padding-bottom: 17px;
+	}
 /*** NAVIGATION ***/
 .listLinks {
 	margin: 0;
@@ -207,7 +247,6 @@ div#stepForgot {
 
 .listLinks li {
 	display: inline;
-	float: left;
 	margin: 0 25px 0 0;
 	width: auto;
 }
