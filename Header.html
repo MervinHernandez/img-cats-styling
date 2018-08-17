@@ -17,6 +17,42 @@
     <script src="https://use.fontawesome.com/c24910c145.js"></script>
     <!-- Google Fonts -->
     <link rel='stylesheet' id='saturnthemes-google-fonts-css'  href='//fonts.googleapis.com/css?family=Ubuntu:regular,italic,700,400,700&#038;subset=all' type='text/css' media='all' />
+    <!-- Dropdown Menu Styling -->
+    <style>
+        .dropbtn {
+            background-color: transparent;
+            color: black;
+            padding: 0;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1001;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+
 </head>
 <body>
 <!-- HEADER - Intermedia Navigation -->
@@ -28,11 +64,19 @@
         <div id="menu-container">
             <ul id="primary-menu" class="menu menu-horizontal">
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1712 narrow">
-                    <a href="http://intermediagroup.com/our-services/"><span class="menu-item-text">Services</span></a></li>
+                    <a href="https://intermediagroup.com/our-services/"><span class="menu-item-text">Services</span></a></li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1763 narrow">
-                    <a href="http://intermediagroup.com/about-us/"><span class="menu-item-text">About Us</span></a></li>
+                    <a href="https://intermediagroup.com/about-us/"><span class="menu-item-text">About Us</span></a></li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1643 narrow">
-                    <a href="#"><span class="menu-item-text">Gov Solutions</span></a></li>
+                    <a href="https://intermediagroup.com/govsolutions/"><span class="menu-item-text">Gov Solutions</span></a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom dropdown dropbtn">
+                    <a href="#">Contract Vehicles</a>
+                    <div class="dropdown-content">
+                        <a href="https://intermediagroup.com/wp-content/uploads/2018/08/IMG_GSA_2018-08-15.pdf"><span class="menu-item-text">GSA-IT 70</span></a>
+                    </div>
+                </li>
+            </ul>
+                </li>
             </ul>
         </div>
     </div>
